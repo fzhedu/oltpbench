@@ -16,6 +16,7 @@
 
 package com.oltpbenchmark.benchmarks.tpcc.procedures;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -216,7 +217,7 @@ public class Delivery extends TPCCProcedure {
             rs.close();
 
             int idx = 1; // HACK: So that we can debug this query
-            delivUpdateCustBalDelivCnt.setDouble(idx++, ol_total);
+            delivUpdateCustBalDelivCnt.setBigDecimal(idx++, new BigDecimal(ol_total));
             delivUpdateCustBalDelivCnt.setInt(idx++, w_id);
             delivUpdateCustBalDelivCnt.setInt(idx++, d_id);
             delivUpdateCustBalDelivCnt.setInt(idx++, c_id);

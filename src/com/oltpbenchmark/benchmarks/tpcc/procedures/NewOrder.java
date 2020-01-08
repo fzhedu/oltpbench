@@ -16,6 +16,7 @@
 
 package com.oltpbenchmark.benchmarks.tpcc.procedures;
 
+import java.math.BigDecimal;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -382,7 +383,7 @@ public class NewOrder extends TPCCProcedure {
 				stmtInsertOrderLine.setInt(5, ol_i_id);
 				stmtInsertOrderLine.setInt(6, ol_supply_w_id);
 				stmtInsertOrderLine.setInt(7, ol_quantity);
-				stmtInsertOrderLine.setDouble(8, ol_amount);
+				stmtInsertOrderLine.setBigDecimal(8, new BigDecimal(ol_amount));
 				stmtInsertOrderLine.setString(9, ol_dist_info);
 				stmtInsertOrderLine.addBatch();
 
