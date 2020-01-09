@@ -4,7 +4,7 @@
 	<!-- Connection details -->
     <dbtype>crdb</dbtype>
     <driver>org.postgresql.Driver</driver>
-    <DBUrl>jdbc:postgresql://172.16.4.41:26257/chbenchmark</DBUrl>
+    <DBUrl>jdbc:postgresql://172.16.4.41:26257/chbenchmark?reWriteBatchedInserts=true</DBUrl>
     <username>root</username>
     <password></password>
     <isolation>TRANSACTION_SERIALIZABLE</isolation>

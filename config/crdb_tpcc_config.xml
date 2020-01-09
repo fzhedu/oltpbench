@@ -2,7 +2,7 @@
 <parameters>
     <dbtype>crdb</dbtype>
     <driver>org.postgresql.Driver</driver>
-    <DBUrl>jdbc:postgresql://172.16.4.41:26257/tpcc</DBUrl>
+    <DBUrl>jdbc:postgresql://172.16.4.41:26257/tpcc?reWriteBatchedInserts=true</DBUrl>
     <DBName>tpcc</DBName>
     <username>root</username>
     <password></password>
