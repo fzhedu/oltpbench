@@ -2,9 +2,9 @@
 <parameters>
     <dbtype>postgres</dbtype>
     <driver>org.postgresql.Driver</driver>
-    <DBUrl>jdbc:postgresql://172.16.4.41:26257/tpcc</DBUrl>
+    <DBUrl>jdbc:postgresql://127.0.0.1:5432/tpcc</DBUrl>
     <DBName>tpcc</DBName>
-    <username>root</username>
+    <username>fzh</username>
     <password></password>
     <terminals>10</terminals>
     

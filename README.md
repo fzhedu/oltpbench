@@ -2,6 +2,15 @@
 
 [![Build Status](https://travis-ci.org/oltpbenchmark/oltpbench.png)](https://travis-ci.org/oltpbenchmark/oltpbench)
 
+Derived for testing cockroachDB, changes including:
+
+1. Strong types for operations, for example 'float + decimal' is not allowed, so change the setDouble()  to setBigDecimal() 
+2. Define primary key in create statements
+3. Increase cluster variables `kv.transaction.max_intents_bytes` and `kv.transaction.max_refresh_spans_bytes	`
+
+changes refers to https://github.com/louishust/benchmarksql-cockroachdb/tree/master/run
+
+------------------------------
 Benchmarking is incredibly useful, yet endlessly painful. This benchmark suite is the result of a group of
 Phd/post-docs/professors getting together and combining their workloads/frameworks/experiences/efforts. We hope this
 will save other people's time, and will provide an extensible platform, that can be grown in an open-source fashion. 

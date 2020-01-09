@@ -87,6 +87,8 @@ CREATE TABLE oorder (
   PRIMARY KEY (o_w_id,o_d_id,o_id),
   UNIQUE (o_w_id,o_d_id,o_c_id,o_id)
 );
+CREATE INDEX idx_order ON oorder (o_w_id,o_d_id,o_c_id,o_id);
+
 
 DROP TABLE IF EXISTS order_line;
 CREATE TABLE order_line (
