@@ -2,13 +2,13 @@
 <parameters>
     <dbtype>crdb</dbtype>
     <driver>org.postgresql.Driver</driver>
-    <DBUrl>jdbc:postgresql://172.16.4.41:26257/chbenchmark_wd10?reWriteBatchedInserts=true</DBUrl>
+    <DBUrl>jdbc:postgresql://172.16.4.41:26257/chbenchmark?reWriteBatchedInserts=true</DBUrl>
     <DBName>tpcc</DBName>
     <username>root</username>
     <password></password>
     <terminals>10</terminals>
     
-    <scalefactor>10</scalefactor>
+    <scalefactor>100</scalefactor>
     <uploadCode></uploadCode>
     <uploadUrl></uploadUrl>
     

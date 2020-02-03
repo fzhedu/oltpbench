@@ -4,15 +4,15 @@
 	<!-- Connection details -->
     <dbtype>crdb</dbtype>
     <driver>org.postgresql.Driver</driver>
-    <DBUrl>jdbc:postgresql://172.16.4.41:26257/chbenchmark?reWriteBatchedInserts=true</DBUrl>
+    <DBUrl>jdbc:postgresql://172.16.4.41:5432/chbenchmark_wd50?reWriteBatchedInserts=true</DBUrl>
     <username>root</username>
-    <password></password>
+    <password>root</password>
     <isolation>TRANSACTION_SERIALIZABLE</isolation>
     <uploadCode></uploadCode>
     <uploadUrl></uploadUrl>
 
 	<!-- Scale factor is the number of warehouses in TPCC -->
-	<scalefactor>2</scalefactor>
+	<scalefactor>50</scalefactor>
 
 	<!-- The workload -->
 	<!-- Number of terminal per workload -->
@@ -28,8 +28,8 @@
  
 	    <!-- A Basic WorkPhase for Mixed Workloads -->
 		<work>
-			<time>120</time>
-			<warmup>60</warmup>
+			<time>900</time>
+			<warmup>300</warmup>
 			<!-- Note: The rate can also be set to UNLIMITED or DISABLED -->
 			<rate>unlimited</rate>
 
